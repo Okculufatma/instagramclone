@@ -1,0 +1,150 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    background: #fafafa;
+    position: relative;
+    padding: 2px;
+}
+/*--- İçerik ile birleşmemesi için body'e padding veriniz. ---*/
+
+.navbar
+{
+  height: 54px;
+  background-color: white;
+}
+/*---Navbarın height'ı 54 px olmalı ve arkaplan rengi beyaz olmalı.---*/
+
+.logo
+{
+  margin-left: 192px;
+}
+/*-- logo class'ının içine 192px soldan margin verin. --*/
+
+.middleare
+{
+  max-height: 200px !important ;
+}
+/*--- Class'da belirttiğimiz middlearea içinde maksimum yükseklik 200px ---*/
+
+.main
+{
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.cardfirst{
+  width: 100%;
+  max-width: 1000px;
+
+  grid-template-columns: 60% 40%;
+  grid-gap: 30px;
+
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  background: #ffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  padding: 10px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+overflow: hidden;
+overflow-x: auto;
+}
+
+.card-body:-webkit-scrollbar{
+  display: none;
+  width: 45px;
+  max-width: 80px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.storyphoto{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 7px;
+  padding: 2px;
+  background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.storyphoto img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 60%;
+    border: 6px solid #ffff ;
+}
+
+.storytext
+{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 1px;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+::placeholder{
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  background-position: 40%;
+  background-size: 6%;
+  background-image: url("/assets/search-solid.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/*--- CSS dosyası içindeki ::placeholder kısmının arkaplanına assets klasörü içinde bulunan arama simgesini ekleyin. Ve resmin tekrar etmemesini sağlayın. --*/
+
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background-color: #FAFAFA;
+}
+
+.postuserfont {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.rightpanel{
+  background-color: #FAFAFA;
+  border: none;
+}
+.rightpanellinks {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+/* --- Rightpanel'de de arkaplan rengi beyaz olup kenarlık olmamalı. ---*/
+#sticky-sidebar {
+  position: fixed;
+}
+/*-- Sağ panelin sayfayı aşağı kaydırdıkça onun da gelmesini sağlıyor. */
+
+
